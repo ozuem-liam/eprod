@@ -1,0 +1,18 @@
+FROM node:current-alpine3.12
+
+LABEL NAME=MAIN_TEST Version=1.0
+
+WORKDIR /app
+
+COPY ["package.json", "yarn.lock", "./"]
+
+RUN yarn install
+
+COPY . /app/
+
+EXPOSE 9003
+ENV PORT=9003
+
+RUN yarn build
+
+CMD yarn start
