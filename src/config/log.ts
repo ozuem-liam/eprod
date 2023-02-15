@@ -82,7 +82,7 @@ class LogService {
 
     constructor(transport: LogTransport = consoleTransport) {
         this.transport = transport;
-        this.logger = pino({ name: 'altmall-api', redact: ['password'] }, transport);
+        this.logger = pino({ name: 'main-api', redact: ['password'] }, transport);
     }
 
     log({ level, type, data, message, id = generateString() }: Log): void {

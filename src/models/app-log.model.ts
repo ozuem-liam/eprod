@@ -1,5 +1,5 @@
 import { model, Schema } from 'mongoose';
-import { IAppLogModel, LogLevels, LogTypes } from '@/types/log';
+import { IAppLogModel, LogLevels, LogTypes } from '../types/log';
 
 const appLogSchema = new Schema(
     {

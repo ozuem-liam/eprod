@@ -1,11 +1,11 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { Model, Types } from 'mongoose';
 import httpStatus from 'http-status';
-import { Request } from '@/types/app';
-import Logger from '@/config/log';
-import { Pagination, Populate, Result } from '@/types/advancedQuery';
-import { formatReqQueryWithRegex } from '@/services/format-query';
-import ApiError from '@/utils/ApiError';
+import { Request } from '../types/app';
+import Logger from '../config/log';
+import { Pagination, Populate, Result } from '../types/advancedQuery';
+import { formatReqQueryWithRegex } from '../services/format-query';
+import ApiError from '../utils/ApiError';
 
 export const buildQuery = (
     req: Request,

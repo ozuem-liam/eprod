@@ -6,7 +6,7 @@ import mongoSanitize from 'express-mongo-sanitize';
 import compression from 'compression';
 import cors from 'cors';
 import fileupload from 'express-fileupload';
-import routes from '@/routes';
+import routes from './routes';
 import { morganSuccessHandler, morganErrorHandler } from './config/morgan';
 import Config from './config/config';
 import httpStatus from 'http-status';
